@@ -43,13 +43,13 @@ annotorious.plugin.ElasticSearch.prototype._showError = function(error) {
 annotorious.plugin.ElasticSearch.prototype._loadAnnotations = function(anno) {
   // TODO need to restrict search to the URL of the annotated
   var self = this;
-  $.getJSON(this._STORE_URI + '_search?query=*:*&size=1000', function(data) {
+  jQuery.getJSON(this._STORE_URI + '_search?query=*:*&size=1000', function(data) {
     try {
-      $.each(data.hits.hits, function(idx, hit) {
+      jQuery.each(data.hits.hits, function(idx, hit) {
         var annotation = hit['_source'];
         annotation.id = hit['_id'];
         
-        if ($.inArray(annotation.id, self._annotations) < 0) {
+        if (jQuery.inArray(annotation.id, self._annotations) < 0) {
           self._annotations.push(annotation.id);
           if (!annotation.shape && annotation.shapes[0].geometry)
             anno.addAnnotation(annotation);
@@ -66,7 +66,7 @@ annotorious.plugin.ElasticSearch.prototype._loadAnnotations = function(anno) {
  */
 annotorious.plugin.ElasticSearch.prototype._create = function(annotation) {
   var self = this;
-  $.post(this._STORE_URI + 'annotation/',  JSON.stringify(annotation), function(response) {
+  jQuery.post(this._STORE_URI + 'annotation/',  JSON.stringify(annotation), function(response) {
     // TODO error handling if response status != 201 (CREATED)
     var id = response['_id'];
     annotation.id = id;
@@ -77,7 +77,7 @@ annotorious.plugin.ElasticSearch.prototype._create = function(annotation) {
  * @private
  */
 annotorious.plugin.ElasticSearch.prototype._delete = function(annotation) {
-  $.ajax({
+  jQuery.ajax({
     url: this._STORE_URI + 'annotation/' + annotation.id,
     type: 'DELETE'
   });
