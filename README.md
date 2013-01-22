@@ -13,7 +13,7 @@ This plugin is licensed under the [WTFPL](http://en.wikipedia.org/wiki/WTFPL).
 Simply [download the script](https://raw.github.com/annotorious/annotorious-elasticsearch-plugin/master/anno-elasticsearch-plugin.js),
 copy it to your server/Webspace and set it up with your page as described below.
 
-1. This plugin uses jQuery - therefore you need to import jQuery into your page, before importing the plugin script.
+1. The plugin uses jQuery. Therefore you need to import jQuery before importing the plugin script.
 2. Add the plugin script to your page just like any other Annotorious plugin. Make sure the plugin script is
    loaded __after__ the main Annotorious script.
 3. Attach the plugin to Annotorious using the ``anno.addPlugin`` API method.
