@@ -10,7 +10,7 @@ This plugin is licensed under the [WTFPL](http://en.wikipedia.org/wiki/WTFPL).
 
 ## Using this Plugin
 
-The plugin is located in the _src_ folder of the project. Simply [download the script](https://raw.github.com/annotorious/annotorious-elasticsearch-plugin/master/src/anno-elasticsearch-plugin.js),
+Simply [download the script](https://raw.github.com/annotorious/annotorious-elasticsearch-plugin/master/anno-elasticsearch-plugin.js),
 copy it to your server/Webspace and set it up with your page as described below.
 
 1. This plugin uses jQuery - therefore you need to import jQuery into your page, before importing the plugin script.
