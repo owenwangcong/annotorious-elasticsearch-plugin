@@ -5,7 +5,7 @@ An simple plugin to [Annotorious](http://github.com/annotorious/annotorious) tha
 primarily for demo purposes - I strongly advise against using this in aproduction environment.
 (Contributions to make it production ready would be very welcome though ;-)
 
-## Using Plugin
+## Using this Plugin
 
 The plugin is located in the _src_ folder of the project. Simply [download the script](https://raw.github.com/annotorious/annotorious-elasticsearch-plugin/master/src/anno-elasticsearch-plugin.js),
 copy it to your server/Webspace and set it with your page as described below.
