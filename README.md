@@ -2,7 +2,7 @@
 
 An simple [Annotorious](http://github.com/annotorious/annotorious) plugin that stores annotations on an 
 [ElasticSearch](http://www.elasticsearch.org/) server. This plugin is meant primarily for demo purposes, and
-as an example for those interested in building their own storage plugins. I strongly advise against using 
+as an example for those interested in building their own storage plugins. I __strongly__ advise against using 
 this plugin in any kind of production environment. (Contributions to make it production ready are always 
 welcome though ;-)
 
