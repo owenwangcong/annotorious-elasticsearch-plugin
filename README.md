@@ -1,9 +1,12 @@
 # Annotorious ElasticSearch Plugin
 
-An simple plugin to [Annotorious](http://github.com/annotorious/annotorious) that uses an 
-[ElasticSearch](http://www.elasticsearch.org/) server to store annotations. This plugin is meant
-primarily for demo purposes - I strongly advise against using this in aproduction environment.
-(Contributions to make it production ready would be very welcome though ;-)
+An simple [Annotorious](http://github.com/annotorious/annotorious) plugin that stores annotations on an 
+[ElasticSearch](http://www.elasticsearch.org/) server. This plugin is meant primarily for demo purposes, and
+as an example for those interested in building their own storage plugins. I strongly advise against using 
+this plugin in any kind of production environment. (Contributions to make it production ready are always 
+welcome though ;-)
+
+This plugin is licensed under the [WTFPL](http://en.wikipedia.org/wiki/WTFPL).
 
 ## Using this Plugin
 
