@@ -39,4 +39,14 @@ copy it to your server/Webspace and set it up with your page as described below.
         </script>
       <head>
     ....
+
+## Hacking on this Plugin
+
+There is a test page in this project at __/test/test.html__. Simply open this test page in your
+browser and you're ready to go.
+
+A word of caution: the test page points to my dev ElasticSearch server. Feel free to use that 
+to hack & test away. But be aware that I'm not making any guarantees in terms of uptime and availability.
+Also, I'm occasionally flushing the server which means annotations will be lost without notice.
+
     
