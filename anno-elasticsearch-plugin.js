@@ -5,7 +5,6 @@
  *
  * THIS PLUGIN IS FOR DEMO PURPOSES ONLY - DON'T USE IN A PRODUCTION
  * ENVIRONMENT.
- * 
  */
 annotorious.plugin.ElasticSearch = function(opt_config_options) {
   /** @private **/
