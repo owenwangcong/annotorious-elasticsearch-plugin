@@ -20,6 +20,10 @@ annotorious.plugin.ElasticSearch.prototype.initPlugin = function(anno) {
     self._create(annotation);
   });
 
+  anno.addHandler('onAnnotationUpdated', function(annotation) {
+    self._update(annotation);
+  });
+
   anno.addHandler('onAnnotationRemoved', function(annotation) {
     self._delete(annotation);
   });
@@ -70,6 +74,18 @@ annotorious.plugin.ElasticSearch.prototype._create = function(annotation) {
     var id = response['_id'];
     annotation.id = id;
   });
+}
+
+/**
+ * @private
+ */
+annotorious.plugin.ElasticSearch.prototype._update = function(annotation) {
+  var self = this;
+  jQuery.ajax({
+    url: this._STORE_URI + 'annotation/' + annotation.id,
+    type: 'PUT',
+    data: JSON.stringify(annotation)
+  }); 
 }
 
 /**
