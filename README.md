@@ -1,12 +1,12 @@
 # Annotorious ElasticSearch Plugin
 
-A simple [Annotorious](http://github.com/annotorious/annotorious) plugin that stores annotations on an 
-[ElasticSearch](http://www.elasticsearch.org/) server. This plugin is meant primarily for demo purposes, and
+A simple [Annotorious](https://github.com/annotorious/annotorious) plugin that stores annotations on an 
+[ElasticSearch](https://www.elastic.co/) server. This plugin is meant primarily for demo purposes, and
 as an example for those interested in building their own storage plugins. I __strongly__ advise against using 
 this plugin in any kind of production environment. (Contributions to make it production ready are always 
 welcome though ;-)
 
-This plugin is licensed under the [WTFPL](http://en.wikipedia.org/wiki/WTFPL).
+This plugin is licensed under the [WTFPL](https://en.wikipedia.org/wiki/WTFPL).
 
 ## Using this Plugin
 
@@ -24,8 +24,8 @@ copy it to your server/Webspace and set it up with your page as described below.
     ....
       <head>
         <!-- Import main Annotorious script and CSS -->
-        <link rel="stylesheet" href="http://annotorious.github.com/latest/annotorious.css" type="text/css" />
-        <script src="http://annotorious.github.com/latest/annotorious.min.js"></script>
+        <link rel="stylesheet" href="https://annotorious.github.com/latest/annotorious.css" type="text/css" />
+        <script src="https://annotorious.github.com/latest/annotorious.min.js"></script>
         
         <!-- Import jQuery - the ElasticSearch plugin depends on it! -->
         <script src="jquery-1.9.0.min.js"></script>
@@ -48,5 +48,3 @@ browser and you're ready to go.
 A word of caution: the test page points to my dev ElasticSearch server. Feel free to use that 
 to hack & test away. But be aware that I'm not making any guarantees in terms of uptime and availability.
 Also, I'm occasionally flushing the server which means annotations will be lost without notice.
-
-    
